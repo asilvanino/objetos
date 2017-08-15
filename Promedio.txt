@@ -1,0 +1,25 @@
+
+import java.util.Scanner;
+
+public class Promedio {
+
+    public static void main(String[] args) {
+     
+        
+         Scanner Leer = new Scanner (System.in);
+         int a, b, c;
+         System.out.print("Dato 1: ");
+         a = Leer.nextInt();
+         System.out.print("Dato 2: ");
+         b = Leer.nextInt();
+         System.out.print("Dato 3: ");
+         c = Leer.nextInt();
+         
+         int promedio;
+         int suma = a + b + c;
+         promedio = suma / 3;
+         
+         System.out.println("su promedio es: " + promedio);
+    }
+    
+}
