@@ -6,9 +6,10 @@
 
 /**
  *
- * @author SIL
+ * @author Administrador
  */
 import java.util.Scanner;
+
 public class Main {
 
     /**
@@ -16,15 +17,13 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        SerieTaylor ST = new SerieTaylor () ;
-        Scanner Sc = new Scanner (System.in);
-        System.out.print("Ingrese el limite (n): ");
-        int lim = Sc.nextInt();
+        Scanner Leer = new Scanner(System.in);
+        Operations op = new Operations();
         System.out.print("Ingrese los grados: ");
-        int grados = Sc.nextInt();
-        System.out.println("Seno: " + ST.SenoX(lim, grados));
-        System.out.println("Coseno: " + ST.cosenoX(lim, grados));
+        int grados = Leer.nextInt();
+        System.out.print("ingrese el limite: ");
+        int limite = Leer.nextInt();
+        System.out.println("arcsinX =  " + op.arcsinX(grados, limite));;
+    }   
 
-    }
-    
 }
